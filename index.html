@@ -3,5 +3,20 @@
 <body>
 <h1>osborneelectric.github.io</h1>
 <p>I'm hosted with GitHub Pages.</p>
+<script>
+  var request = new XMLHttpRequest();
+
+request.open('GET', 'https://mementoserver-hrd.appspot.com/v1/libraries/05bs3AuZu/entries?token=c8fda258-1f5e-4db2-9420-0c5c2c2af816');
+
+request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+    console.log('Status:', this.status);
+    console.log('Headers:', this.getAllResponseHeaders());
+    console.log('Body:', this.responseText);
+  }
+};
+
+request.send();
+  </script>
 </body>
 </html>
