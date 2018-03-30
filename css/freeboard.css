@@ -763,13 +763,13 @@ freeboard
 ============*/
 
 html {
-	background-color: #101214;
+	background-color: #6A5ACD;
 	height: 100%;
 	overflow: hidden;
 }
 
 body {
-	background-color: #101214;
+	background-color: #6A5ACD;
 	color: #8b8b8b;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -1377,7 +1377,7 @@ ul, ol {
 }
 
 .gridster .gs_w {
-	background: #2a2a2a;
+	background: #6A5ACD;
 	padding: 0px;
 	margin: 0px;
 	overflow: hidden;
