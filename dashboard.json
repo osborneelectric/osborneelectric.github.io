@@ -1,0 +1,198 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [
+		"/plugins/all"
+	],
+	"panes": [
+		{
+			"title": "Job Statuses",
+			"width": 1,
+			"row": {
+				"1": 1,
+				"2": 1,
+				"3": 1
+			},
+			"col": {
+				"1": 1,
+				"2": 1,
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Invoices",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"invoice\"]",
+						"sparkline": false,
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Quotes",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"quote\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "In Progress",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"inprogress\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Certificate",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"certificate\"]",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"1": 35,
+				"2": 7,
+				"3": 1
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "",
+						"size": "regular",
+						"value": "datasources[\"time\"][\"time_string_value\"]",
+						"sparkline": false,
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"1": 47,
+				"2": 13,
+				"3": 11
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "OSBORNE",
+						"size": "regular",
+						"value": "OSBORNE",
+						"sparkline": false,
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"1": 41,
+				"2": 1,
+				"3": 5
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "memento",
+						"size": "regular",
+						"value": "var myObj, myJSON, text, obj;\n\n//Storing data:\nmyObj = datasources[\"memento\"]\n//{ \"name\":\"John\", \"age\":31, \"city\":\"New York\" };\nmyJSON = JSON.stringify(myObj);\nlocalStorage.setItem(\"testJSON\", myJSON);\n\n//Retrieving data:\ntext = localStorage.getItem(\"testJSON\");\nobj = JSON.parse(text);\ndocument.getElementById(\"Osborne\").innerHTML = obj.ID;",
+						"sparkline": true,
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"invoice\"]",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "picture",
+					"settings": {
+						"src": "http://www.osborne-electrical.co.uk/_/rsrc/1519384336213/config/customLogo.gif?revision=34",
+						"refresh": 0
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "time",
+			"type": "clock",
+			"settings": {
+				"refresh": 1
+			}
+		},
+		{
+			"name": "Osborne Jobs",
+			"type": "dweet_io",
+			"settings": {
+				"thing_id": "osbornejobs",
+				"show_full": false
+			}
+		}
+	],
+	"columns": 3
+}
