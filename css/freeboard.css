@@ -908,7 +908,7 @@ input[type="color"],
 	padding: 4px 6px;
 	font-size: 14px;
 	line-height: 20px;
-	color: #d3d4d4;
+	color: #fcfcfc;
 	vertical-align: middle;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -1235,7 +1235,7 @@ header h1 {
 
 .table td {
 	border-top: solid 1px #3d3d3d;
-	color: #d3d4d4;
+	color: #fcfcfc;
 }
 
 #datasources {
@@ -2258,11 +2258,11 @@ ul.datasource-input-suffix {
 	vertical-align: baseline;
 	-webkit-font-smoothing: antialiased;
 	font-style: normal;
-	color: #d3d4d4;
+	color: #fcfcfc;
 }
 
 .title.bordered {
-	border: solid 3px #d3d4d4;
+	border: solid 3px #fcfcfc;
 	display: inline-block;
 	padding: 2px 17px 2px 17px;
 	line-height: 39px;
