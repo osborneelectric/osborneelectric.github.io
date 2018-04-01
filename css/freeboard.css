@@ -770,7 +770,7 @@ html {
 
 body {
 	background-color: #101214;
-	color: #8b8b8b;
+	color: #fcfcfc;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
@@ -800,7 +800,7 @@ body {
 	height: 40px;
 	margin: 0;
 	padding: 0 10px 0 10px;
-	color: #8b8b8b;
+	color: #fcfcfc;
 	text-transform: uppercase;
 }
 
@@ -808,7 +808,7 @@ body {
 	background-color: #272727;
 	height: 40px;
 	margin: 0;
-	color: #8b8b8b;
+	color: #fcfcfc;
 	text-transform: uppercase;
 	clear: both;
 }
