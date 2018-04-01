@@ -908,7 +908,7 @@ input[type="color"],
 	padding: 4px 6px;
 	font-size: 14px;
 	line-height: 20px;
-	color: #d3d4d4;
+	color: #fcfcfc;
 	vertical-align: middle;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -1235,7 +1235,7 @@ header h1 {
 
 .table td {
 	border-top: solid 1px #3d3d3d;
-	color: #d3d4d4;
+	color: #fcfcfc;
 }
 
 #datasources {
@@ -1313,7 +1313,7 @@ header h1 {
 }
 
 .small-text {
-	color: #d3d4d4;
+	color: #fcfcfc;
 	font-size: 20px;
 	font-weight: 100;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
