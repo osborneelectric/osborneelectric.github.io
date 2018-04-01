@@ -763,13 +763,13 @@ freeboard
 ============*/
 
 html {
-	background-color: #6A5ACD;
+	background-color: #101214;
 	height: 100%;
 	overflow: hidden;
 }
 
 body {
-	background-color: #6A5ACD;
+	background-color: #101214;
 	color: #8b8b8b;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -1118,11 +1118,11 @@ a:focus {
 }
 
 .gridster header {
-	background-color: #272727;
+	background-color: #0000CD;
 	height: 30px;
 	margin: 0;
 	padding: 0 10px 0 10px;
-	color: #8b8b8b;
+	color: #ffffff;
 	text-transform: uppercase;
 }
 
@@ -1377,7 +1377,7 @@ ul, ol {
 }
 
 .gridster .gs_w {
-	background: #6A5ACD;
+	background: #1e90ff;
 	padding: 0px;
 	margin: 0px;
 	overflow: hidden;
