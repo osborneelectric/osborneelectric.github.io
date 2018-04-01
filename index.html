@@ -21,7 +21,8 @@
                         window.alert(hashpattern);
 			    if (hashpattern !== null) {
                             $.getJSON(hashpattern[2], function(data) {
-                                freeboard.loadDashboard('dashboard2.json', function() {
+                                freeboard.loadDashboard(data, function() {
+					window.alter(data);
                                     freeboard.setEditing(false);
                                 });
                             });
