@@ -908,7 +908,7 @@ input[type="color"],
 	padding: 4px 6px;
 	font-size: 14px;
 	line-height: 20px;
-	color: #fcfcfc;
+	color: #d3d4d4;
 	vertical-align: middle;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -1076,7 +1076,7 @@ table {
 }
 
 .table .table {
-	background-color: #fcfcfc;
+	background-color: #ffffff;
 }
 
 .table-condensed th,
@@ -1122,7 +1122,7 @@ a:focus {
 	height: 30px;
 	margin: 0;
 	padding: 0 10px 0 10px;
-	color: #fcfcfc;
+	color: #ffffff;
 	text-transform: uppercase;
 }
 
@@ -1235,7 +1235,7 @@ header h1 {
 
 .table td {
 	border-top: solid 1px #3d3d3d;
-	color: #fcfcfc;
+	color: #d3d4d4;
 }
 
 #datasources {
@@ -1313,7 +1313,7 @@ header h1 {
 }
 
 .small-text {
-	color: #fcfcfc;
+	color: #d3d4d4;
 	font-size: 20px;
 	font-weight: 100;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
