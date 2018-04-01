@@ -18,11 +18,11 @@
                         freeboard.initialize(false);
 
                         var hashpattern = window.location.hash.match(/(&|#)source=([^&]+)/);
-                        window.alert(hashpattern);
+                        window.alert("hash"+hashpattern);
 			    if (hashpattern !== null) {
                             $.getJSON(hashpattern[2], function(data) {
                                 freeboard.loadDashboard(data, function() {
-					window.alter(data);
+					window.alert("     Data"+data);
                                     freeboard.setEditing(false);
                                 });
                             });
