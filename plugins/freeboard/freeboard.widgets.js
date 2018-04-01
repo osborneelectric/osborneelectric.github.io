@@ -378,7 +378,7 @@
                 max: (_.isUndefined(currentSettings.max_value) ? 0 : currentSettings.max_value),
                 label: currentSettings.units,
                 showInnerShadow: false,
-                valueFontColor: "#d3d4d4"
+                valueFontColor: "#fcfcfc"
             });
         }
 
