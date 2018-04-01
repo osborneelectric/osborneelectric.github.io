@@ -1,0 +1,268 @@
+{
+	"version": 1,
+	"allow_edit": false,
+	"plugins": [
+		"/plugins/all"
+	],
+	"panes": [
+		{
+			"title": "Job Statuses",
+			"width": 1,
+			"row": {
+				"1": 1,
+				"2": 1,
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"1": 1,
+				"2": 1,
+				"3": 2,
+				"4": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Quotes",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"quote\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Invoices",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"invoice\"]",
+						"sparkline": false,
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"1": 35,
+				"2": 7,
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"3": 3,
+				"4": 4
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "",
+						"size": "regular",
+						"value": "datasources[\"time\"][\"time_string_value\"]",
+						"sparkline": false,
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "regular",
+						"value": "datasources[\"time\"][\"date_string_value\"]",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"title": "JOB TYPE",
+			"width": 1,
+			"row": {
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"3": 1,
+				"4": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "test",
+						"value": "datasources[\"Osborne Jobs\"][\"certificate\"]",
+						"units": "time",
+						"min_value": 0,
+						"max_value": 100
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"3": 3,
+				"4": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Certificates",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"certificate\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Active Jobs",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"inprogress\"]",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"title": "STAFF INFO",
+			"width": 1,
+			"row": {
+				"3": 1,
+				"4": 11
+			},
+			"col": {
+				"3": 3,
+				"4": 4
+			},
+			"col_width": 1,
+			"widgets": []
+		},
+		{
+			"title": "MESSAGES",
+			"width": 1,
+			"row": {
+				"1": 47,
+				"2": 13,
+				"3": 5,
+				"4": 7
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"3": 3,
+				"4": 4
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "MESSAGES",
+						"size": "regular",
+						"value": "HELLO THERE",
+						"sparkline": false,
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"title": "WEEK NUMBER",
+			"width": 1,
+			"row": {
+				"3": 9,
+				"4": 9
+			},
+			"col": {
+				"3": 1,
+				"4": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Week Number",
+						"size": "big",
+						"value": "Date.prototype.getWeek = function() {\n var onejan = new Date(this.getFullYear(), 0, 1);\n return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);\n}\nvar weekNumber = (new Date()).getWeek();\nvar dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];\nvar now = new Date();\nreturn (weekNumber);//dayNames[now.getDay()] + \" (\" + weekNumber + \").\");",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 19,
+				"4": 11
+			},
+			"col": {
+				"3": 2,
+				"4": 2
+			},
+			"col_width": 2,
+			"widgets": [
+				{
+					"type": "picture",
+					"settings": {
+						"src": "http://www.osborne-electrical.co.uk/square.png",
+						"refresh": 0
+					}
+				}
+			]
+		},
+		{
+			"title": "Next Job Number",
+			"width": 1,
+			"row": {
+				"3": 29,
+				"4": 15
+			},
+			"col": {
+				"3": 2,
+				"4": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"invoice\"]",
+						"animate": true
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "time",
+			"type": "clock",
+			"settings": {
+				"refresh": 1
+			}
+		},
+		{
+			"name": "Osborne Jobs",
+			"type": "dweet_io",
+			"settings": {
+				"thing_id": "osbornejobs"
+			}
+		}
+	],
+	"columns": 4
+}
