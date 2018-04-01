@@ -2603,7 +2603,7 @@ var freeboard = (function()
 	var currentStyle = {
 		values: {
 			"font-family": '"HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", sans-serif',
-			"color"      : "#d3d4d4",
+			"color"      : "#fcfcfc",
 			"font-weight": 100
 		}
 	};
