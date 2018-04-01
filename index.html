@@ -17,12 +17,12 @@
                     { //DOM Ready
                         freeboard.initialize(false);
 
-                        var hashpattern = "/dashboard.json";//window.location.hash.match(/(&|#)source=([^&]+)/);
-                        window.alert("     Hash: "+hashpattern);
+                        var hashpattern = window.location.hash.match(/(&|#)source=([^&]+)/);
+                        //window.alert("     Hash: "+hashpattern);
 			    if (hashpattern !== null) {
                             $.getJSON(hashpattern[1], function(data) {
                                 freeboard.loadDashboard(data, function() {
-					window.alert("     Data: "+data);
+					//window.alert("     Data: "+data);
                                     freeboard.setEditing(false);
                                 });
                             });
