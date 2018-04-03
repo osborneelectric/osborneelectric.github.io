@@ -1,0 +1,335 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [
+		"/plugins/"
+	],
+	"panes": [
+		{
+			"title": "Job Statuses",
+			"width": 1,
+			"row": {
+				"1": 1,
+				"2": 1,
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"1": 1,
+				"2": 1,
+				"3": 2,
+				"4": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Quotes",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"quote\"]\nif ( datasources[\"Osborne Jobs\"][\"quote\"] == 0) return \"0\";",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Invoices",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"invoice\"]\nif ( datasources[\"Osborne Jobs\"][\"invoice\"] == 0) return \"0\";",
+						"sparkline": false,
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"1": 23,
+				"2": 5,
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"3": 3,
+				"4": 4
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "",
+						"size": "regular",
+						"value": "datasources[\"time\"][\"time_string_value\"]",
+						"sparkline": false,
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "regular",
+						"value": "datasources[\"time\"][\"date_string_value\"]",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"title": "JOB TYPE",
+			"width": 1,
+			"row": {
+				"1": 11,
+				"2": 11,
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"1": 1,
+				"2": 1,
+				"3": 1,
+				"4": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "jqPlotWidget",
+					"settings": {
+						"id": "chart1",
+						"data": "[[\n    ['Heavy Industry', 12],['Retail', 9], ['Light Industry', 14], \n    ['Out of home', 16],['Commuting', 7], ['Orientation', 9]\n  ]]",
+						"options": "{ \n      seriesDefaults: {\n        // Make this a pie chart.\n        renderer: $.jqplot.PieRenderer, \n        rendererOptions: {\n          // Put data labels on the pie slices.\n          // By default, labels show the percentage of the slice.\n          showDataLabels: true\n        }\n      }, \n      legend: { show: true, location: 'e' }\n    }",
+						"chartHeight": 300,
+						"chartWidth": 600,
+						"height": 5
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"1": 29,
+				"2": 11,
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"3": 3,
+				"4": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Certificates",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"certificate\"]\nif ( datasources[\"Osborne Jobs\"][\"certificate\"] == 0) return \"0\";",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Active Jobs",
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"inprogress\"]\nif ( datasources[\"Osborne Jobs\"][\"inprogress\"] == 0) return \"0\";",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"title": "MESSAGES",
+			"width": 1,
+			"row": {
+				"1": 45,
+				"2": 1,
+				"3": 5,
+				"4": 7
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"3": 3,
+				"4": 4
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "MESSAGES",
+						"size": "regular",
+						"value": "datasources[\"Osborne Messages\"]",
+						"sparkline": false,
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"title": "WEEK NUMBER",
+			"width": 1,
+			"row": {
+				"1": 39,
+				"2": 21,
+				"3": 9,
+				"4": 13
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"3": 1,
+				"4": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Week Number",
+						"size": "big",
+						"value": "Date.prototype.getWeek = function() {\n var onejan = new Date(this.getFullYear(), 0, 1);\n return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);\n}\nvar weekNumber = (new Date()).getWeek();\nvar dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];\nvar now = new Date();\nreturn (weekNumber);//dayNames[now.getDay()] + \" (\" + weekNumber + \").\");",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"title": "STAFF INFO",
+			"width": 1,
+			"row": {
+				"1": 49,
+				"2": 23,
+				"3": 1,
+				"4": 11
+			},
+			"col": {
+				"1": 1,
+				"2": 1,
+				"3": 3,
+				"4": 4
+			},
+			"col_width": 1,
+			"widgets": []
+		},
+		{
+			"width": 1,
+			"row": {
+				"1": 53,
+				"2": 27,
+				"3": 19,
+				"4": 11
+			},
+			"col": {
+				"1": 1,
+				"2": 1,
+				"3": 2,
+				"4": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "picture",
+					"settings": {
+						"src": "http://www.osborne-electrical.co.uk/square.png",
+						"refresh": 0
+					}
+				}
+			]
+		},
+		{
+			"title": "LINKS",
+			"width": 1,
+			"row": {
+				"1": 63,
+				"2": 27,
+				"4": 11
+			},
+			"col": {
+				"1": 1,
+				"2": 2,
+				"4": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "html",
+					"settings": {
+						"html": "<font size=\"3\">\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"http://mail.osborne-electrical.co.uk/\" rel=\"nofollow\" target=\"_blank\">Email<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"http://www.osborne-electrical.co.uk/\" rel=\"nofollow\" target=\"_blank\">Home</a>\n</font>",
+						"height": 3
+					}
+				},
+				{
+					"type": "jqPlotWidget",
+					"settings": {
+						"id": "chart1",
+						"data": "['Heavy Industry', 12],['Retail', 9], ['Light Industry', 14], ['Out of home', 16],['Commuting', 7], ['Orientation', 9]",
+						"options": "var plot1 = $.jqplot('pie1', [[['a',25],['b',14],['c',7]]], {\n        gridPadding: {top:0, bottom:38, left:0, right:0},\n        seriesDefaults:{\n            renderer:$.jqplot.PieRenderer, \n            trendline:{ show:false }, \n            rendererOptions: { padding: 8, showDataLabels: true }\n        },\n        legend:{\n            show:true, \n            placement: 'outside', \n            rendererOptions: {\n                numberRows: 1\n            }, \n            location:'s',\n            marginTop: '15px'\n        }       \n    });",
+						"chartHeight": 300,
+						"chartWidth": 300,
+						"height": 4
+					}
+				}
+			]
+		},
+		{
+			"title": "Next Job Number",
+			"width": 1,
+			"row": {
+				"1": 79,
+				"2": 37,
+				"3": 29,
+				"4": 19
+			},
+			"col": {
+				"1": 1,
+				"2": 1,
+				"3": 2,
+				"4": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Osborne Jobs\"][\"invoice\"]",
+						"animate": true
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "time",
+			"type": "clock",
+			"settings": {
+				"refresh": 1
+			}
+		},
+		{
+			"name": "Osborne Jobs",
+			"type": "dweet_io",
+			"settings": {
+				"thing_id": "osbornejobs"
+			}
+		},
+		{
+			"name": "Osborne Messages",
+			"type": "dweet_io",
+			"settings": {
+				"thing_id": "osbornemessages"
+			}
+		}
+	],
+	"columns": 4
+}
