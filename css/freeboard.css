@@ -1107,7 +1107,7 @@ a:active {
 }
 
 a {
-	color: #B88F51;
+	color: #fcfcfc;
 	text-decoration: none;
 }
 
@@ -2104,7 +2104,7 @@ td.form-table-value > input[type="checkbox"] {
 }
 
 .value-editor-ds {
-	color: #B88F51;
+	color: #fcfcfc;
 	cursor: pointer;
 }
 
@@ -2120,7 +2120,7 @@ ul.board-toolbar.vertical {
 }
 
 .board-toolbar li {
-	color: #B88F51;
+	color: #fcfcfc;
 	float: left;
 	cursor: pointer;
 	margin: 0px 0px 0px 5px;
@@ -2158,7 +2158,7 @@ ul.board-toolbar.vertical {
 }
 
 .text-button {
-	color: #B88F51;
+	color: #fcfcfc;
 	cursor: pointer;
 	text-transform: uppercase;
 }
@@ -2168,7 +2168,7 @@ ul.board-toolbar.vertical {
 }
 
 a:hover.text-button, a:focus.text-button {
-	color: #B88F51;
+	color: #fcfcfc;
 	text-decoration: none;
 }
 
