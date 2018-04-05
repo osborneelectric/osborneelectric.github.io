@@ -15,7 +15,7 @@
       console.log('render');
 
       //add external css
-      $(element).append('<link rel="stylesheet" href="https://sites.google.com/site/osborneelec/jquery.jqplot.min.css/" />');      
+      $(element).append('<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.css" />');      
 
       //add the chart div to the dom
       var chartDiv = '<div id="' + currentSettings.id + '" style="height:' + currentSettings.chartHeight + 'px;width:' + currentSettings.chartWidth + 'px;"></div>';
@@ -62,11 +62,11 @@
     "display_name": "jqPlot",    
     "fill_size": true,
     "external_scripts": [
-      "https://sites.google.com/site/osborneelec/jquery.jqplot.min.js/",
-      "https://sites.google.com/site/osborneelec/jqplot.pieRenderer.min.js/",
-      "https://sites.google.com/site/osborneelec/jqplot.barRenderer.min.js/",
-      "https://sites.google.com/site/osborneelec/jqplot.categoryAxisRenderer.min.js/",
-      "https://sites.google.com/site/osborneelec/jqplot.pointLabels.min.js/"
+      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.js",
+      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pieRenderer.min.js",
+      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.barRenderer.min.js",
+      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.categoryAxisRenderer.min.js",
+      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pointLabels.min.js"
     ],    
     "settings": [
       {
