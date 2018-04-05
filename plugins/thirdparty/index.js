@@ -15,7 +15,7 @@
       console.log('render');
 
       //add external css
-      $(element).append('<link rel="stylesheet" href="jqplot/jquery.jqplot.min.css" />');
+      $(element).append('<link rel="stylesheet" href="http://dashboard.osborne-electrical.co.uk/plugins/thirdparty/jqplot/jquery.jqplot.min.css" />');
                         //http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.css" />');      
 
       //add the chart div to the dom
@@ -63,11 +63,11 @@
     "display_name": "jqPlot",    
     "fill_size": true,
     "external_scripts": [
-      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.js",
-      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pieRenderer.min.js",
-      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.barRenderer.min.js",
-      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.categoryAxisRenderer.min.js",
-      "http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/plugins/jqplot.pointLabels.min.js"
+      "http://dashboard.osborne-electrical.co.uk/plugins/thirdparty/jqplot/jquery.jqplot.min.js",
+      "http://dashboard.osborne-electrical.co.uk/plugins/thirdparty/jqplot/jqplot.pieRenderer.min.js",
+      "http://dashboard.osborne-electrical.co.uk/plugins/thirdparty/jqplot/jqplot.barRenderer.min.js",
+      "http://dashboard.osborne-electrical.co.uk/plugins/thirdparty/jqplot/jqplot.categoryAxisRenderer.min.js",
+      "http://dashboard.osborne-electrical.co.uk/plugins/thirdparty/jqplot/jqplot.pointLabels.min.js"
     ],    
     "settings": [
       {
