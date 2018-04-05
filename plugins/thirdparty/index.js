@@ -15,7 +15,7 @@
       console.log('render');
 
       //add external css
-      $(element).append('<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.css" />');      
+      $(element).append('<link rel="stylesheet" href="http://dashboard.osborne-electrical.co.uk/plugins/thirdparty/jqplot/jquery.jqplot.min.css" />');      
 
       //add the chart div to the dom
       var chartDiv = '<div id="' + currentSettings.id + '" style="height:' + currentSettings.chartHeight + 'px;width:' + currentSettings.chartWidth + 'px;"></div>';
