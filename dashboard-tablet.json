@@ -27,7 +27,7 @@
 				{
 					"type": "text_widget",
 					"settings": {
-						"title": "Quotes / Quoted",
+						"title": "Quotes  /  Quoted",
 						"size": "big",
 						"value": "return datasources[\"Osborne Jobs\"][\"quote\"]+\"  /  \"+datasources[\"Osborne Jobs\"][\"quoted\"]",
 						"animate": true
@@ -95,7 +95,7 @@
 				{
 					"type": "html",
 					"settings": {
-						"html": "<img src=\"https://dl.dropbox.com/s/p4vq6j6i0o6xs2m/osborne_fuzz.gif?dl=0\" alt=\"Osborne\" style=\"float:right;width:110px;\" vspace=\"15\" hspace=\"15\">\n<font size=\"3\">\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"javascript:window.location.reload(true)\">Reload<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"http://mail.osborne-electrical.co.uk/\" rel=\"nofollow\" target=\"_blank\">View Work Email<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"http://calendar.osborne-electrical.co.uk/\" rel=\"nofollow\" target=\"_blank\">View Work Diary<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"https://osborneelectric.quickfile.co.uk/login?ReturnUrl=%2fdashboard\" rel=\"nofollow\" target=\"_blank\">Osborne Accounting<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"https://osborneelectric.charliehr.com/\" rel=\"nofollow\" target=\"_blank\">Goto Charlie HR<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"http://www.osborne-electrical.co.uk/\" rel=\"nofollow\" target=\"_blank\">Osborne Electrical<br></a>\n</font>",
+						"html": "<a href=\"javascript:window.location.reload(true)\"><img src=\"https://dl.dropbox.com/s/p4vq6j6i0o6xs2m/osborne_fuzz.gif?dl=0\" alt=\"Osborne\" style=\"float:right;width:110px;\" vspace=\"15\" hspace=\"15\"></a>\n<font size=\"3\">\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"http://mail.osborne-electrical.co.uk/\" rel=\"nofollow\" target=\"_blank\">View Work Email<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"http://calendar.osborne-electrical.co.uk/\" rel=\"nofollow\" target=\"_blank\">View Work Diary<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"https://osborneelectric.quickfile.co.uk/login?ReturnUrl=%2fdashboard\" rel=\"nofollow\" target=\"_blank\">Osborne Accounting<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"https://osborneelectric.charliehr.com/\" rel=\"nofollow\" target=\"_blank\">Goto Charlie HR<br></a>\n    <br>&nbsp;&nbsp;&nbsp;<a href=\"http://www.osborne-electrical.co.uk/\" rel=\"nofollow\" target=\"_blank\">Osborne Electrical<br></a>\n</font>",
 						"height": 4
 					}
 				}
