@@ -11,17 +11,7 @@
     <script src="js/freeboard.thirdparty.min.js"></script>
     <script type="text/javascript">
         head.js("js/freeboard_plugins.min.js",
-        	"plugins/thirdparty/plugin_highcharts.js",
-		      "plugins/thirdparty/battery.js",
-	      	"plugins/thirdparty/actuator.js",
-		      "plugins/thirdparty/gauge.js",
-		      "plugins/thirdparty/index.js",
-		      "plugins/thirdparty/jquery.sparkline.min.js",
-		      "plugins/thirdparty/justgage.1.0.1.js",
-		      "plugins/thirdparty/plugin_highcharts_.js",
-		"plugins/thirdparty/raphael.2.1.0.min.js",
-		"plugins/thirdparty/slider-plugin.js",
-		"plugins/thirdparty/switch.js",
+        	"plugins/thirdparty/index.js",
                 function(){
                     $(function()
                     { //DOM Ready
@@ -31,7 +21,7 @@
                         //    $.getJSON(hashpattern[2], function(data) {
                               $.getJSON("dashboard-tablet.json", function(data) {
 				freeboard.loadDashboard(data, function() {
-                                    freeboard.setEditing(true);
+                                    freeboard.setEditing(false);
                                 });
                             });
                         //}
