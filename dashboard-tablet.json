@@ -27,9 +27,9 @@
 				{
 					"type": "text_widget",
 					"settings": {
-						"title": "Quotes / Book In",
+						"title": "Quotes  /  Quoted",
 						"size": "big",
-						"value": "return datasources[\"Osborne Jobs\"][\"quote\"]+\"  /  \"+datasources[\"Osborne Jobs\"][\"bookin\"]",
+						"value": "return datasources[\"Osborne Jobs\"][\"quote\"]+\"  /  \"+datasources[\"Osborne Jobs\"][\"quoted\"]",
 						"animate": true
 					}
 				},
@@ -155,9 +155,9 @@
 				{
 					"type": "text_widget",
 					"settings": {
-						"title": "Certificates / Awaiting Payment",
+						"title": "Book In / Certificates",
 						"size": "big",
-						"value": "return datasources[\"Osborne Jobs\"][\"certificate\"]+\"  /  \"+datasources[\"Osborne Jobs\"][\"payment\"]",
+						"value": "return datasources[\"Osborne Jobs\"][\"bookin\"]+\"  /  \"+datasources[\"Osborne Jobs\"][\"certificate\"]",
 						"animate": true
 					}
 				},
