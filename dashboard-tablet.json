@@ -27,7 +27,7 @@
 				{
 					"type": "text_widget",
 					"settings": {
-						"title": "Quotes / Book In,
+						"title": "Quotes / Book In",
 						"size": "big",
 						"value": "return datasources[\"Osborne Jobs\"][\"quote\"]+\"  /  \"+datasources[\"Osborne Jobs\"][\"bookin\"]",
 						"animate": true
