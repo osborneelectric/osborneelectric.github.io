@@ -225,7 +225,7 @@
 				{
 					"type": "html",
 					"settings": {
-						"html": "<a href=\"javascript:window.location.reload(true)\"><img src=\"https://www.dropbox.com/s/5759ha1xszc9htn/TRANS.gif?dl=0\" alt=\"Osborne\" style=\"float:centre;width:110px;\" vspace=\"15\" hspace=\"15\"></a>\n<font size=\"3\">\n</font>",
+						"html": "<a href=\"javascript:window.location.reload(true)\"><img src=\"https://www.dropbox.com/s/ordlpnrwod5uef7/TRANS.gif?raw=1\" alt=\"Osborne\" style=\"float:centre;width:210px;\" vspace=\"15\" hspace=\"15\"></a>\n<font size=\"3\">\n</font>",
 						"height": 2
 					}
 				}
