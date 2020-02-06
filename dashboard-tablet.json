@@ -1,6 +1,6 @@
 {
 	"version": 1,
-	"allow_edit": false,
+	"allow_edit": true,
 	"plugins": [
 		"/plugins/"
 	],
